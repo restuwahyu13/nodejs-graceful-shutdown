@@ -1,0 +1,35 @@
+{
+	"name": "nodejs-graceful-shutdown",
+	"version": "1.0.0",
+	"description": "Example implementation cluster and graceful shutdown",
+	"main": "index.js",
+	"scripts": {
+		"start": "node index.js",
+		"dev": "nodemon index.js"
+	},
+	"author": {
+		"name": "Restu Wahyu Saputra",
+		"email": "restuwahyu13@gmail.com",
+		"url": "https://github.com/restuwahyu13"
+	},
+	"maintainers": [
+		"Restu Wahyu Saputra"
+	],
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/restuwahyu13/nodejs-graceful-shutdown"
+	},
+	"license": "MIT",
+	"engines": {
+		"node": ">=16.x.x",
+		"npm": ">=8.x.x"
+	},
+	"dependencies": {
+		"dotenv": "^16.4.5",
+		"express": "^4.19.2",
+		"nodejs-graceful-shutdown": "file:"
+	},
+	"devDependencies": {
+		"nodemon": "^3.1.4"
+	}
+}
