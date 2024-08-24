@@ -9,7 +9,7 @@ class MultiThread {
 	constructor() {
 		this.nodecluster = cluster
 		this.__event = new EventEmitter()
-		this.__signals = ['SIGTERM', 'SIGINT', 'SIGQUIT', 'SIGHUP', 'SIGABRT', 'SIGALRM', 'SIGUSR1']
+		this.__signals = ['SIGTERM', 'SIGINT', 'SIGQUIT', 'SIGHUP', 'SIGABRT', 'SIGALRM', 'SIGUSR1', 'SIGUSR2']
 		this.__cpus = this.__cpus <= 0 ? 1 : this.__cpus
 	}
 
