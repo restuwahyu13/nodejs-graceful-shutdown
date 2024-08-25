@@ -43,7 +43,7 @@ class MultiThread {
 			})
 		} else if (!singleThread && cluster.isWorker) {
 			process.on('message', (msg) => {
-				if (typeof msg !== 'string') {
+				if (msg instanceof cluster.Worker) {
 					console.info(`Worker id ${msg.worker.id} and process pid ${msg.worker.process.pid} has teminated`)
 					msg.worker.kill()
 				} else {
